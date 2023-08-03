@@ -1,0 +1,821 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&family=Martian+Mono:wght@400;500&display=swap");
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  width: 350px;
+  margin: auto;
+}
+nav .navtext {
+  text-transform: uppercase;
+  color: #213887;
+  font-family: "Martian Mono", monospace;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 109%; /* 15.26px */
+  letter-spacing: -0.56px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.line {
+  width: 350px;
+  border: none; /* Убираем стандартную горизонтальную линию */
+  border-top: 1px solid #cacfe2; /* Задаем желаемый стиль и цвет горизонтальной линии */
+  margin-top: 0px;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+}
+.hero .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero .container h1 {
+  color: #142251;
+  font-family: "Martian Mono", monospace;
+  text-transform: uppercase;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%; /* 44px */
+  letter-spacing: -1.6px;
+  width: 150px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 20px;
+}
+.hero .container h3 {
+  color: #989EB1;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  margin: 0px;
+  padding: 0px;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+.hero .container .vector-hero {
+  width: 387px;
+  height: 322px;
+  max-width: 500px;
+  max-height: 500px;
+}
+.hero .button-hero-desktop {
+  display: none;
+}
+.hero .button-hero {
+  width: 350px;
+  height: 60px;
+  display: flex;
+  background-color: #F3F6F9; /* Пример цвета фона кнопки */
+  border: none;
+  border-radius: 4px;
+  color: #213887; /* Цвет текста */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 10px;
+}
+.hero .button-hero .button-hero-text {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 34px;
+  width: 100px;
+  flex-grow: 0; /* Расширяет текст на всю доступную ширину */
+}
+.hero .button-hero .button-hero-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 34px;
+  fill: #fff; /* Цвет заливки иконки */
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+}
+.about .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.about .container span {
+  display: none;
+}
+.about .container h2 {
+  color: #142251;
+  font-family: "Exo 2", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 85%; /* 34px */
+  letter-spacing: -1.6px;
+  margin-bottom: 0px;
+  margin-left: 20px;
+}
+.about .container h4 {
+  color: #989EB1;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  margin: 0px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.about .container .vector-tablo-for-mobile1 {
+  width: 350px;
+  margin: auto;
+  margin-top: 14px;
+  margin-bottom: 0px;
+  padding: 0px;
+}
+.about .container .p-vector-tablo-for-mobile1 {
+  color: #142251;
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 20.4px */
+  letter-spacing: -0.34px;
+  width: 193px;
+  height: 56px;
+  position: absolute;
+  top: 714px;
+  margin-left: 40px;
+}
+.about .container .vector-tablo2 {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  margin: auto;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.about .container .vector-tablo2 .vector-palar-for-tablo2-mobile {
+  width: 100px;
+  margin-top: 18px;
+  margin-left: 20px;
+}
+.about .container .vector-tablo2 .p-vector-tablo-for-mobile2 {
+  color: #142251;
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 20.4px */
+  letter-spacing: -0.34px;
+  width: 193px;
+  height: 56px;
+  margin-left: 35px;
+}
+.about .container .vector-tablo3 {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  margin: auto;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.about .container .vector-tablo3 .p-vector-tablo-for-mobile3 {
+  color: #142251;
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 20.4px */
+  letter-spacing: -0.34px;
+  width: 193px;
+  height: 56px;
+  margin-left: 20px;
+}
+.about .container .vector-tablo3 .vector-tablo3-svg {
+  width: 115px;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 30px;
+}
+.about .container .vector-tablo4 {
+  position: relative;
+  width: 350px;
+  height: 150px;
+  margin: auto;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.about .container .vector-tablo4 .vector-tablo4-svg {
+  width: 122px;
+  margin-left: 20px;
+}
+.about .container .vector-tablo4 .p-vector-tablo-for-mobile4 {
+  color: #142251;
+  font-family: "Exo 2", sans-serif;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 120%; /* 20.4px */
+  letter-spacing: -0.34px;
+  width: 109px;
+  height: 56px;
+  margin-left: 26px;
+}
+.about .container .vector-ping {
+  display: none;
+}
+
+.form-gen {
+  display: flex;
+  justify-content: center;
+}
+.form-gen .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.form-gen .container form {
+  width: 350px;
+  height: 372px;
+  background-color: #F3F6F9;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.form-gen .container form .theme {
+  width: 300px;
+  height: 35px;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  margin-bottom: 0px;
+  margin-top: 25px;
+}
+.form-gen .container form input {
+  color: #989EB1;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  padding-left: 15px;
+}
+.form-gen .container form .button-form-gen {
+  width: 318px;
+  height: 38px;
+  display: flex;
+  background-color: #142251; /* Пример цвета фона кнопки */
+  border: none;
+  border-radius: 4px;
+  color: #ffffff; /* Цвет текста */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 0px;
+}
+.form-gen .container form .button-form-gen .button-form-gen-text {
+  font-family: "Exo 2", sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+  margin-left: 34px;
+  width: 100px;
+  flex-grow: 1; /* Расширяет текст на всю доступную ширину */
+}
+.form-gen .container form .button-form-gen .button-form-gen-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 34px;
+}
+.form-gen .container form .text-gen-cont {
+  width: 318px;
+  height: 215px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+.form-gen .container form .text-gen-cont .text-gen {
+  color: #989EB1;
+  font-family: "Exo 2", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 14px */
+  letter-spacing: -0.42px;
+  padding-left: 15px;
+}
+
+footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+footer .footer {
+  display: flex;
+  justify-content: center;
+}
+footer .footer .container {
+  display: flex;
+  width: 350px;
+  height: 35px;
+  border-radius: 100px;
+  border: 1px solid #AFB4C4;
+}
+footer .footer .container .ico-github {
+  width: 18px;
+  margin-left: 13px;
+}
+footer .footer .container .vertical-line {
+  height: 35px;
+  width: 1px;
+  background-color: #AFB4C4;
+  margin-left: 6px;
+}
+footer .footer .container .ico-telegram {
+  width: 20px;
+  margin-left: 12px;
+}
+footer .footer .container .telegram-name {
+  color: #142251;
+  font-family: "Martian Mono", monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.36px;
+  margin-left: 8px;
+}
+footer .footer .container .email {
+  color: #213887;
+  font-family: "Martian Mono", monospace;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 100%; /* 12px */
+  letter-spacing: -0.36px;
+  text-decoration-line: underline;
+  margin-left: 12px;
+}
+
+@media only screen and (min-width: 1245px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: 1270px;
+    margin: auto;
+    padding-left: 45px;
+  }
+  nav .navtext {
+    margin-top: 22px;
+    margin-left: 20px;
+    display: flex;
+    margin: auto;
+  }
+  nav .navtext .p {
+    text-transform: uppercase;
+    color: #213887;
+    font-family: "Martian Mono", monospace;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 109%; /* 15.26px */
+    letter-spacing: -0.56px;
+    margin: auto;
+  }
+  .line {
+    width: 100%;
+    border: none; /* Убираем стандартную горизонтальную линию */
+    border-top: 1px solid #cacfe2; /* Задаем желаемый стиль и цвет горизонтальной линии */
+  }
+  .hero {
+    display: flex;
+    justify-content: center;
+  }
+  .hero .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .hero .container .cont-h-hero {
+    margin-left: 20px;
+  }
+  .hero .container .cont-h-hero h1 {
+    color: #142251;
+    font-family: "Martian Mono", monospace;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 44px */
+    letter-spacing: -1.6px;
+    width: 630px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 20px;
+  }
+  .hero .container .cont-h-hero h3 {
+    color: #989EB1;
+    font-family: "Exo 2", sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-left: 30px;
+  }
+  .hero .container .vector-hero {
+    width: 600px;
+    height: 400px;
+  }
+  .hero .button-hero {
+    display: none;
+  }
+  .hero .button-hero-desktop {
+    width: 300px;
+    height: 60px;
+    display: flex;
+    background-color: #F3F6F9; /* Пример цвета фона кнопки */
+    border: none;
+    border-radius: 4px;
+    color: #213887; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .hero .button-hero-desktop .button-hero-desktop-text {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    margin-left: 34px;
+    width: 100px;
+    flex-grow: 0; /* Расширяет текст на всю доступную ширину */
+  }
+  .hero .button-hero-desktop .button-hero-desktop-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 34px;
+    fill: #fff; /* Цвет заливки иконки */
+  }
+  .about {
+    display: flex;
+    justify-content: center;
+  }
+  .about .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .container .cont-h-about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .about .container .cont-h-about h2 {
+    color: #142251;
+    font-family: "Exo 2", sans-serif;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 85%; /* 34px */
+    letter-spacing: -1.6px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+  }
+  .about .container .cont-h-about h4 {
+    color: #989EB1;
+    font-family: "Exo 2", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+    margin: 0px;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .about .container .cont-vector-about {
+    display: flex;
+    position: relative;
+    width: 1200px;
+    height: 295px;
+  }
+  .about .container .cont-vector-about span {
+    color: #989EB1;
+    font-family: "Exo 2", sans-serif;
+    display: inline;
+  }
+  .about .container .cont-vector-about .vector-tablo1 {
+    width: 400px;
+    height: 200px;
+  }
+  .about .container .cont-vector-about .vector-tablo-for-mobile1 {
+    width: 350px;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 0px;
+    padding: 0px;
+    position: absolute;
+    transform: rotate(-12deg);
+  }
+  .about .container .cont-vector-about .p-vector-tablo-for-mobile1 {
+    color: #142251;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    line-height: 120%; /* 20.4px */
+    letter-spacing: -0.34px;
+    width: 193px;
+    height: 56px;
+    margin-left: 40px;
+    position: absolute;
+    top: 45px;
+    transform: rotate(-12deg);
+  }
+  .about .container .cont-vector-about .vector-tablo2 {
+    position: absolute;
+    width: 250px;
+    height: 274px;
+    display: inline;
+    top: 0px;
+    left: 383px;
+    background-color: transparent;
+  }
+  .about .container .cont-vector-about .vector-tablo2 .vector-palar-for-tablo2-mobile {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    transform: rotate(17deg);
+    margin-left: 25px;
+    margin-top: 20px;
+    opacity: 50%;
+  }
+  .about .container .cont-vector-about .vector-tablo2 .p-vector-tablo-for-mobile2 {
+    color: #142251;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+    letter-spacing: -0.34px;
+    width: 193px;
+    height: 56px;
+    position: absolute;
+    top: 220px;
+    margin: 0px;
+  }
+  .about .container .cont-vector-about .vector-tablo3 {
+    position: absolute;
+    width: 244px;
+    height: 259px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+    left: 645px;
+  }
+  .about .container .cont-vector-about .p-vector-tablo-for-mobile3 {
+    color: #142251;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+    letter-spacing: -0.34px;
+    width: 193px;
+    height: 56px;
+    margin-left: 20px;
+  }
+  .about .container .cont-vector-about .vector-tablo3-svg {
+    width: 250px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 30px;
+    position: absolute;
+    top: 130px;
+  }
+  .about .container .vector-tablo4 {
+    position: absolute;
+    width: 285px;
+    height: 204px;
+    margin: auto;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline;
+    right: 0px;
+    right: 30px;
+    top: 40px;
+  }
+  .about .container .vector-tablo4-svg {
+    width: 250px;
+    margin-left: 20px;
+  }
+  .about .container .p-vector-tablo-for-mobile4 {
+    color: #142251;
+    font-family: "Exo 2", sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+    letter-spacing: -0.34px;
+    width: 130px;
+    height: 56px;
+    margin-left: 26px;
+  }
+  .about .container .vector-ping {
+    display: inline;
+    position: absolute;
+  }
+  .about .container .vector-ping .vector-ping-svg {
+    width: 1100px;
+    height: 140px;
+    display: inline;
+  }
+  .form-gen {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+  }
+  .form-gen .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 0px;
+    height: 372px;
+    width: 1200px;
+  }
+  .form-gen .container form {
+    width: 1200px;
+    height: 372px;
+    background-color: #F3F6F9;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+  }
+  .form-gen .container form .theme {
+    width: 862px;
+    height: 35px;
+    border-radius: 10px;
+    border: none;
+    margin: auto;
+    margin-bottom: 0px;
+    margin-top: 25px;
+  }
+  .form-gen .container form input {
+    color: #989EB1;
+    font-family: "Exo 2", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+    padding-left: 15px;
+  }
+  .form-gen .container form .button-form-gen {
+    width: 878px;
+    height: 38px;
+    display: flex;
+    background-color: #142251; /* Пример цвета фона кнопки */
+    border: none;
+    border-radius: 4px;
+    color: #ffffff; /* Цвет текста */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  .form-gen .container form .button-form-gen .button-form-gen-text {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-left: 34px;
+    width: 100px;
+    flex-grow: 1; /* Расширяет текст на всю доступную ширину */
+  }
+  .form-gen .container form .button-form-gen .button-form-gen-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 34px;
+  }
+  .form-gen .container form .text-gen-cont {
+    width: 878px;
+    height: 215px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  .form-gen .container form .text-gen-cont .text-gen {
+    color: #989EB1;
+    font-family: "Exo 2", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 14px */
+    letter-spacing: -0.42px;
+    padding-left: 15px;
+  }
+  footer {
+    margin-top: 20px;
+    display: flex;
+    margin-bottom: 20px;
+    width: 1200px;
+  }
+  footer .footer {
+    display: flex;
+    justify-content: center;
+  }
+  footer .footer .container {
+    display: flex;
+    width: 350px;
+    height: 35px;
+    border-radius: 100px;
+    border: 1px solid #AFB4C4;
+  }
+  footer .footer .container .ico-github {
+    width: 18px;
+    margin-left: 13px;
+  }
+  footer .footer .container .vertical-line {
+    height: 35px;
+    width: 1px;
+    background-color: #AFB4C4;
+    margin-left: 6px;
+  }
+  footer .footer .container .ico-telegram {
+    width: 20px;
+    margin-left: 12px;
+  }
+  footer .footer .container .telegram-name {
+    color: #142251;
+    font-family: "Martian Mono", monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.36px;
+    margin-left: 8px;
+  }
+  footer .footer .container .email {
+    color: #213887;
+    font-family: "Martian Mono", monospace;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 12px */
+    letter-spacing: -0.36px;
+    text-decoration-line: underline;
+    margin-left: 12px;
+  }
+}/*# sourceMappingURL=main.css.map */
